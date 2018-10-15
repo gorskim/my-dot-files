@@ -6,4 +6,4 @@ The base for this vim setup is [ets-labs python-vimrc](https://github.com/ets-la
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ets-labs/python-vimrc/master/setup.sh)"
 ```
 
-Note: YCM need additional installation. 
+Note: YCM needs additional installation. 
