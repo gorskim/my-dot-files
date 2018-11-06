@@ -6,7 +6,17 @@ The base for this vim setup is [ets-labs python-vimrc](https://github.com/ets-la
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ets-labs/python-vimrc/master/setup.sh)"
 ```
 
-Then, I adjusted it a little bit to myself.
+Then, I adjusted it a little bit to myself:
+```shell
+wget https://raw.githubusercontent.com/gorskim/my-vim-setup/master/.vimrc
+mv .vimrc.1 .vimrc
+```
+
+YCM installation:
+```shell
+sudo apt install build-essential cmake python3-dev
+cd ~/.vim/bundle/YouCompleteMe && python3 install.py --clang-completer
+```
 
 Note: 
 
