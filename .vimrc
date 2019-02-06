@@ -1,5 +1,5 @@
 let $vimhome=fnamemodify(resolve(expand("~/.vimrc")), ':p:h')
-let $vundle=$vimhome."/bundle/Vundle.vim"
+let $vundle="~/.vim/bundle/Vundle.vim"
 
 " Be iMproved
 set nocompatible
@@ -26,6 +26,7 @@ call vundle#begin()
     Plugin 'rosenfeld/conque-term'              " Consoles as buffers
     Plugin 'tpope/vim-surround'                 " Parentheses, brackets, quotes, XML tags, and more
     Plugin 'flazz/vim-colorschemes'             " Colorschemes
+    Plugin 'avakhov/vim-yaml'
 
     "-------------------=== Snippets support ===--------------------
     Plugin 'garbas/vim-snipmate'                " Snippets manager
@@ -206,7 +207,8 @@ let g:pymode_indent=1
 
 " code running
 let g:pymode_run=1
-let g:pymode_run_bind='<F5>'
+"" let g:pymode_run_bind='<F5>'
+nnoremap <buffer> <F5> :exec '!python' shellescape(@%, 1)<cr>
 
 " syntastic
 let g:syntastic_always_populate_loc_list=1
@@ -235,4 +237,4 @@ nmap <leader>d :YcmCompleter GoToDefinition<CR>
 "" behave mswin
 
 "" Uncomment if vim starts slow
-"" set clipboard=exclude:.*
+set clipboard=exclude:.*
