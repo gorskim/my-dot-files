@@ -236,5 +236,9 @@ nmap <leader>d :YcmCompleter GoToDefinition<CR>
 "" source $VIMRUNTIME/mswin.vim
 "" behave mswin
 
+"" bind commands to F7 and F8
+nmap <F8> :set paste
+nmap <F7> :set nopaste
+
 "" Uncomment if vim starts slow
 set clipboard=exclude:.*
