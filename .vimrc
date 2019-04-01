@@ -118,7 +118,7 @@ let g:airline_powerline_fonts=1
 "=====================================================
 let g:tagbar_autofocus=0
 let g:tagbar_width=42
-autocmd BufEnter *.py :call tagbar#autoopen(0)
+"" autocmd BufEnter *.py :call tagbar#autoopen(0)
 "" autocmd BufWinLeave *.py :TagbarClose
 
 "=====================================================
@@ -241,4 +241,4 @@ nmap <F8> :set paste
 nmap <F7> :set nopaste
 
 "" Uncomment if vim starts slow
-set clipboard=exclude:.*
+"" set clipboard=exclude:.*
