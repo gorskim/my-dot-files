@@ -1,4 +1,6 @@
-# my-vim-setup
+# my-dot-files
+
+## Re: vim setup
 
 The base for this vim setup is [ets-labs python-vimrc](https://github.com/ets-labs/python-vimrc). Hence, .vimrc file was initialized by:
 
@@ -8,7 +10,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ets-labs/python-vimrc/mast
 
 Then, I adjusted it a little bit to myself:
 ```shell
-wget https://raw.githubusercontent.com/gorskim/my-vim-setup/master/.vimrc
+wget https://raw.githubusercontent.com/gorskim/my-dot-files/master/.vimrc
 mv .vimrc.1 .vimrc
 ```
 
