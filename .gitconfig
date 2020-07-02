@@ -1,5 +1,5 @@
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
     co = checkout
     cob = checkout -b
     ci = commit
@@ -15,6 +15,7 @@
     cm = checkout master
     brd = branch -D
     cim = commit -m
+    cdev = checkout develop
 [user]
 	name = Mateusz Gorski
 	email = mateu.gorski@gmail.com
