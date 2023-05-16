@@ -20,9 +20,10 @@
     globalignore = config --global core.excludesfile ~/.gitignore
     pullall = submodule update --recursive
     freqch = log --pretty=format: --name-only | sort | uniq -c | sort -rg | head -10
+    brdremote = push origin --delete
 [user]
 	name = Mateusz Gorski
-    email = mateu.gorski@gmail.com
+	email = mateu.gorski@gmail.com
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
