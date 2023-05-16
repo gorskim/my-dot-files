@@ -4,6 +4,7 @@
     cob = checkout -b
     ci = commit
     cim = commit -m
+    ciam = commit --amend
     st = status
     br = branch
     hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
@@ -16,11 +17,16 @@
     brd = branch -D
     cim = commit -m
     cdev = checkout develop
+    globalignore = config --global core.excludesfile ~/.gitignore
+    pullall = submodule update --recursive
+    freqch = log --pretty=format: --name-only | sort | uniq -c | sort -rg | head -10
 [user]
 	name = Mateusz Gorski
-	email = mateu.gorski@gmail.com
+    email = mateu.gorski@gmail.com
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
+	autocrlf = input
 [merge]
 	tool = vimdiff
 [push]
